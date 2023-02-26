@@ -3,12 +3,13 @@
 
 int InputArraySize(string msg)
 {
-    System.Console.WriteLine("Input array size");
+    System.Console.WriteLine(msg);
     if(int.TryParse(Console.ReadLine(), out int value))
     {
         return value;
     }
     System.Console.WriteLine("Only integer pls");
+    Environment.Exit(1);
     return 0;
 }
 
